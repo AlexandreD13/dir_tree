@@ -21,7 +21,7 @@ setup(
     author="Alexandre Desfosses",
     author_email="",
     description="",
-    python_requires="==3.9",
+    python_requires="~=3.9",
     py_modules=["cli"],
     entry_points={
         "console_scripts": [
