@@ -37,10 +37,10 @@ def trim_paths(all_paths: list) -> list:
     """
 
     for i in range(len(all_paths)):
-        all_paths[i] = all_paths[i].split("\\".join(os.getcwd().split("\\")[-2:]))
+        all_paths[i] = all_paths[i].split("/".join(os.getcwd().split("/")[-2:]))
         all_paths[i] = all_paths[i][-1]
-        all_paths[i] = all_paths[i].lstrip("\\")
-        all_paths[i] = all_paths[i].split("\\")
+        all_paths[i] = all_paths[i].lstrip("/")
+        all_paths[i] = all_paths[i].split("/")
     return all_paths
 
 
