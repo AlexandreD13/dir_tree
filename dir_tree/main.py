@@ -9,7 +9,7 @@ import os
 
 
 AVOID:      list = ["__pycache__", "build", "dist", ".egg-info", ".git", ".idea", "venv"]
-DIRECTORY:  str = os.getcwd().split("\\")[-1]
+DIRECTORY:  str = os.getcwd().split("/")[-1]
 
 
 def walk_directory() -> list:
